@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family:"Segoe UI", "Helvetica Neue", Arial,  sans-serif;
+    justify-content: center;
+    color: #1E2A3A;
+    font-size: 1.1rem;
+}
+#Container {
+    max-width: 1024px;
+    min-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #D9EEFF 0, #F2FAFF 20%, #ffffff 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.30);
+}
+nav {
+    padding: 15px 30px 15px 15px;
+    height: 30px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+}
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a#header-text {
+    padding-left: 30px;
+    word-spacing: -4px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+nav a#header-text span {
+    background: linear-gradient(90deg, #005FAE 0, #19A0FF 100%);
+    background-clip: text;
+    color: transparent;
+}
+nav li a:hover {
+    color: #0078D4;
+}
+nav ul {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    width: 100px;
+    text-align: center;
+}
+nav ul li ul.dropdown {
+    list-style-type: disc;
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    background: #FFFFFF;
+    font-size: 0.9rem;
+    border: 1px solid #ffffff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
+nav ul li ul.dropdown li {
+    float: none;
+    text-align: left;
+    width: 150px;
+    margin-bottom: 5px;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+main {
+    height: 500px;
+    padding: 45px;
+}
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+footer {
+    padding: 50px 50px 0;
+}
+footer h5, footer h6 {
+    margin-bottom: 10px;
+    color: #334155;
+}
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0.9rem;
+}
+footer ul li {
+    margin-bottom: 2px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #0078D4;
+}
+footer div {
+    display: inline-block;
+    width: 30%;
+    padding: 0 1% 0 0;
+    vertical-align: top;
+}
+footer div p{
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+.my-question {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+.center-copyright {
+    text-align: center;
+    margin: 20px auto 0;
+    font-size: 0.9rem;
+}   
+footer a:hover {
+    color: #19A0FF;
+    padding-left: 5px;
+    transition: all 0.3s ease;
+}
