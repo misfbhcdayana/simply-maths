@@ -9,6 +9,8 @@ body {
     justify-content: center;
     color: #1E2A3A;
     font-size: 1.1rem;
+    background-image: url("../images/bg-image.png");
+    background-repeat: repeat;
 }
 #Container {
     max-width: 1024px;
@@ -18,6 +20,7 @@ body {
     background: linear-gradient(135deg, #D9EEFF 0, #F2FAFF 20%, #ffffff 100%);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.30);
 }
+/*header across all pages*/
 nav {
     padding: 15px 30px 15px 15px;
     height: 30px;
@@ -25,18 +28,19 @@ nav {
     background: #FFFFFF;
 }
 nav a {
-    color: #000000;
+    color: #475569;
     text-decoration: none;
     font-weight: 600;
 }
 nav a#header-text {
+    color: #000000;
     padding-left: 30px;
     word-spacing: -4px;
     font-size: 1.5rem;
     font-weight: 700;
 }
 nav a#header-text span {
-    background: linear-gradient(90deg, #005FAE 0, #19A0FF 100%);
+    background: linear-gradient(90deg, #0078D4 0, #19A0FF 100%);
     background-clip: text;
     color: transparent;
 }
@@ -80,16 +84,45 @@ nav > ul::after {
     clear: both;
     display: block;
 }
+.current-page {
+    color: #19A0FF;
+}
+/*header end*/
 
 main {
-    height: 500px;
     padding: 45px;
 }
+
+/*contact form styling*/
+section#contact-form {
+    max-width: 70%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+section#contact-form input, section#contact-form textarea, section#contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+section#contact-form button:hover {
+    background-color: linear-gradient(180deg, #D9EEFF 0, #F2FAFF 20%, #ffffff 100%);
+}
+/*contact form styling end*/
+
+/*footer across all pages*/
 hr {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 footer {
     padding: 50px 50px 0;
+    background: #FFFFFF;
 }
 footer h5, footer h6 {
     margin-bottom: 10px;
@@ -123,7 +156,7 @@ footer div p{
 }
 .center-copyright {
     text-align: center;
-    margin: 20px auto 0;
+    margin: 20px auto 10px;
     font-size: 0.9rem;
 }   
 footer a:hover {
@@ -131,3 +164,4 @@ footer a:hover {
     padding-left: 5px;
     transition: all 0.3s ease;
 }
+/*footer end*/
