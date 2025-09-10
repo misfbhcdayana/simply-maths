@@ -45,7 +45,7 @@ nav a#header-text span {
     color: transparent;
 }
 nav li a:hover {
-    color: #0078D4;
+    color: #19A0FF;
 }
 nav ul {
     float: right;
@@ -85,12 +85,20 @@ nav > ul::after {
     display: block;
 }
 .current-page {
-    color: #19A0FF;
+    color: #0078D4;
 }
 /*header end*/
 
 main {
     padding: 45px;
+}
+main h1, main h2, main h3 {
+    margin: 20px 15px;
+}
+main p {
+    margin: 5px 15px;
+    font-size: 1rem;
+    text-indent: 3%;
 }
 
 /*contact form styling*/
@@ -111,8 +119,16 @@ section#contact-form input, section#contact-form textarea, section#contact-form 
     box-sizing: border-box;
     font-size: 1rem;
 }
+section#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+section#contact-form button{
+    background: #0078D4;
+}
 section#contact-form button:hover {
-    background-color: linear-gradient(180deg, #D9EEFF 0, #F2FAFF 20%, #ffffff 100%);
+    background: #19A0FF;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 /*contact form styling end*/
 
