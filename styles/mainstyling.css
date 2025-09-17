@@ -100,6 +100,14 @@ main p {
     font-size: 1rem;
     text-indent: 3%;
 }
+main span {
+    padding: 2px 5px;
+    font-size: 0.7rem;
+    color: #008AF2;
+    font-weight: 700;
+    background-color: rgba(217, 238, 255, 0.5);
+    border-radius: 25px;
+}
 
 /*contact form styling*/
 section#contact-form {
