@@ -5,12 +5,31 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/mainstyling.css">
     <title>Home &middot; Simply Maths</title>
+    <style>
+        table {
+            font-size: 1.2rem;
+            margin-left: 0;
+            border: 1px solid black;
+            border-spacing: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 600px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: left;
+        }
+        table tr:first-child {
+            background-color: #A6D7FF;
+        }
+    </style>
 </head>
 <body>
     <div id="Container">
         <header>
             <nav>
-                <a href="index.html" id="header-text"> Simply <span>Maths</span></a>
+                <a href="index.html" id="header-text"> Simply <span class="gradient-text">Maths</span></a>
                 <ul>
                     <li><a href="index.html" class="current-page">Home</a></li>
                     <li><a href="#">Explore</a>
@@ -32,8 +51,87 @@
             </nav>
         </header>
         <main>
-            <span>Learn &middot; Play &middot; Apply</span>
-            <p>This is a sample webpage with custom styling.</p>
+            <section>
+                <span class="little">Learn &middot; Play &middot; Apply</span>
+                <h1>Maths that <span class="gradient-text">feels easy</span> — and fun.</h1>
+                <p class="bigger-text indent">I think maths is very interesting. What do you think? Come share my view with me.</p>
+                <a href="pages/everyday.html" class="button-link-1">Get Started</a> <a href="pages/play.html" class="button-link-2">Play &amp; Learn</a>
+                <ul>
+                    <li>Quick tips for daily life</li>
+                    <li>Short intros into algebra, geometry, stats</li>
+                    <li>"Did you know?" facts &amp; quotes</li>
+                </ul>
+            </section>
+            <section id="section-one">
+                <div>
+                    <h3>What is Maths</h3>
+                    <p>Clean definitions, core ideas, and why it matters in tech and life</p>
+                    <a href="#about">Explore</a>
+                </div>
+                <div>
+                    <h3>Quotes &amp; Memes</h3>
+                    <p>Motivation meets maths. Shareable phrases that will spark your curiousity.</p>
+                    <a href="#quotes">Get inspired</a>
+                </div>
+            </section>
+            <section id="section-two">
+                <h2 id="about">What mathematics is all about</h2>
+                <p class="indent">
+                    In short, informal words, <a href="https://en.wikipedia.org/wiki/Mathematics" target="_blank">Mathematics</a> is the language we use to describe and understand patterns, solve puzzles, and make sense of the universe.
+                    It’s the science of possibilities, structure, order and relation, relevant to various fields such as Engineering, Science, Music and everyday life. 
+                    Counting, shopping, budgeting, time management and technology amongst others, are very evident applications of mathematics.
+                </p>
+            </section>
+            <hr>
+            <section>
+                <h2>Some Simple Mathematical Terms</h2>
+                <table>
+                    <tr>
+                        <th colspan="2">Term</th>
+                        <th>What it means</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">Basic</th>
+                        <th>Number</th>
+                        <td>A symbol representing quantity (e.g., 0, 1, 2… or words like “seven”).</td>
+                    </tr>
+                    <tr>
+                        <th>Fraction</th>
+                        <td>A way to represent parts of a whole number or integer, like ½ or ¾.</td>  
+                    </tr>
+                    <tr>
+                        <th>Integer</th>
+                        <td>A whole number, which can be positive, negative, or zero (e.g., -3, 0, 4).</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Advanced</th>
+                        <th>Variable</th>
+                        <td>A symbol (often a letter) that represents an unknown value in equations or expressions, like x or y.</td>
+                    </tr>
+                    <tr>
+                        <th>Function</th>
+                        <td>A relation where each input (x) has exactly one output (y), like y = 2x + 3.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <strong>Other Terms:</strong> probablity, equation, funtion, median, mode, matrix, vector, <em>etc...</em>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+            <section id="section-three">
+                <h2 id="quotes">Quotes &amp; Memes</h2>
+                <div class="quote">
+                    <p>"Pure mathematics is, in its way, the poetry of logical ideas." <br> &mdash; Albert Einstein</p>
+                </div>
+                <div class="quote">
+                    <p>"Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding." <br> &mdash; William Paul Thurston</p>
+                </div>
+                <div class="quote">
+                    <p>"The only way to learn mathematics is to do mathematics." <br> &mdash; Paul Halmos</p>
+                </div>
+            </section>
         </main>
         <hr>
         <footer>
