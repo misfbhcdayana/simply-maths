@@ -41,14 +41,22 @@ nav a {
     color: #475569;
     font-weight: 600;
 }
+nav p {
+    display: inline;
+}
+nav p img {
+    vertical-align: top;
+    margin-right: 8px;
+}
 nav a#header-text {
+    display: inline-block;
+    margin-bottom: 5px;
     color: #000000;
-    padding-left: 30px;
     word-spacing: -4px;
     font-size: 1.5rem;
     font-weight: 700;
 }
-span.gradient-text {
+.gradient-text {
     background: linear-gradient(90deg, #0078D4 0, #19A0FF 100%);
     background-clip: text;
     color: transparent;
@@ -122,7 +130,7 @@ main span.little {
 main section {
     padding: 25px 45px;
 }
-main section#section-one, main section#section-three {
+main section.white-bg {
     background-color: #ffffff;
 }
 main section a.button-link-1, main section a.button-link-2, #to-top {
@@ -162,7 +170,7 @@ main section a.button-link-2:hover, #top-button:hover {
     background-color: #F2FAFF;
     transform: scale(1.1);
 }
-main section#section-one div, main section#section-three div{
+main section div.boxed{
     border: 1px solid #0078D4;
     border-left: 10px solid #0078D4;
     border-radius: 10px;
@@ -170,6 +178,7 @@ main section#section-one div, main section#section-three div{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     background: white;
     max-width: 80%;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 table {
@@ -265,3 +274,28 @@ footer a:hover, main section#section-one a:hover {
     transition: all 0.3s ease;
 }
 /*footer end*/
+@media print {
+  nav, #to-top, footer {
+    display: none;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+  span.gradient-text {
+    background: none;
+    color: black;
+  }
+  * {
+    box-shadow: none !important;
+    background: none !important;
+  }
+  #Container {
+    width: 100%;
+    margin: 0;
+  }
+  table {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+}

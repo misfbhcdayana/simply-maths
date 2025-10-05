@@ -5,12 +5,30 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/mainstyling.css">
     <title>Play&amp;Learn &middot; Simply Maths</title>
+    <style>
+        main li {
+            margin-left: 1.2rem;
+            margin-bottom: 0.5rem;
+            list-style-position: outside;
+        }
+        main section div.boxed {
+            border-radius: 5px;
+        }
+        main section div a.button-link-1 {
+            margin: 0;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
     <div id="Container">
         <header>
             <nav>
-                <a href="../index.html" id="header-text"> Simply <span class="gradient-text">Maths</span></a>
+                <p>
+                    <img src="../images/logo.png" width="30px" alt="Logo" id="logo">
+                    <a href="../index.html" id="header-text"> Simply <span class="gradient-text">Maths</span></a>
+                </p>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="#">Explore</a>
@@ -37,45 +55,48 @@
                 <p>Puzzles, riddles, and printable challenges. Learn by doing.</p>
                 <a href="facts.html" class="button-link-1">See Facts</a>
             </section>
-            <section id="section-one">
-                <h3>Riddles</h3>
+            <section id="section-one" class="white-bg">
+                <h2>Riddles</h2>
                 <p>Answers at the bottom of the page :&rpar; <a href="#answers">&darr;</a></p>
-                <div>
+                <div class="boxed">
                     <em>I am an odd number. Take away one letter and I become even. What am I?</em>
                 </div>
-                <div>
+                <div class="boxed">
                     <em>The more you take away from me, the bigger I get. What am I? </em>
                 </div>
             </section>
+            <hr>
             <section>
-                <h3>Games</h3>
+                <h2>Games</h2>
                 <ul>
                     <li>Number Bingo</li>
                     <li>Math Board Race</li>
-                    <li>Prodigy (site)</li>
-                    <li>Math Playground (site)</li>
+                    <li>Prodigy </li>
+                    <li>Math Playground</li>
                 </ul>
             </section>
-            <section>
-                <h3>Printable Puzzles</h3>
-                <div>
+            <section class="white-bg">
+                <h2>Printable Puzzles</h2>
+                <div class="boxed">
                     <p>Coming soon: a PDF pack of fraction and percentage drills, sudoku and cross-number puzzles</p>
+                    <a href="contact.html#contact-form" class="button-link-1">Notify Me</a>
                 </div>
             </section>
+            <hr>
             <section>
-                <h3>DIY</h3>
+                <h2>DIY</h2>
                 <ul>
-                    <li>Paper Origami (site): Great for understanding geometry, symmetry, and angles.</li>
-                    <li>Measuring projects : Build a simple box, tower, or paper bridge using measurements and ratios.</li>
-                    <li>Math Art: Create patterns with tessellations or coordinate plotting.</li>
+                    <li><a href="https://origami.guide/" target="_blank">Paper Origami</a>: Great for understanding geometry, symmetry, and angles.</li>
+                    <li>Measuring projects: Build a simple box, tower, or paper bridge using measurements and ratios.</li>
+                    <li><a href="https://www.artfulmaths.com/mathematical-art-lessons.html" target="_blank">Math Art:</a> Create patterns with tessellations or coordinate plotting.</li>
                 </ul>
             </section>
-            <section id="answers">
+            <section id="answers" class="white-bg">
                 <h3>Riddle Answers</h3>
-                <div>
+                <div class="boxed">
                     <strong>1.</strong> Seven (take away the 's' and it becomes 'even')
                 </div>
-                <div>
+                <div class="boxed">
                     <strong>2.</strong> A hole
                 </div>
             </section>
@@ -107,7 +128,7 @@
                     <li><a href="contact.html#disclaimer">Disclaimer</a></li>
                 </ul>
             </div>
-            <p class="center-copyright">&copy; 2025 Simply Maths. All Rights Reserved.</p>
+            <p class="center-copyright">&copy; 2025 Simply Maths. All Rights Reserved. Created by <a href="../../myindex.html" target="_blank"> Dayana Bright</a></p>
         </footer>
         
     </div>
