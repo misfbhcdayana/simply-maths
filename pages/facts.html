@@ -5,12 +5,30 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/mainstyling.css">
     <title>Facts &middot; Simply Maths</title>
+    <style>
+        main section div.boxed {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        main li {
+            margin-left: 1.2rem;
+            margin-bottom: 0.5rem;
+            list-style-position: outside;
+        }
+        main section p.justify, main section ul {
+            text-align: justify;
+            margin-left: 1.5rem;
+        }
+    </style>
 </head>
 <body>
     <div id="Container">
         <header>
             <nav>
-                <a href="../index.html" id="header-text"> Simply <span class="gradient-text">Maths</span></a>
+                <p>
+                    <img src="../images/logo.png" width="30px" alt="Logo" id="logo">
+                    <a href="../index.html" id="header-text"> Simply <span class="gradient-text">Maths</span></a>
+                </p>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="#">Explore</a>
@@ -35,40 +53,43 @@
             <section>
                 <h1>Random <span class="gradient-text">Facts</span></h1>
                 <p class="indent">Mathematics is full of surprising, quirky, and fascinating facts that make it more than just numbers on a page.</p>
-                <a href="play.html" class="button-link-2">See Play &amp; Learn</a>
+                <a href="play.html" class="button-link-2">Play &amp; Learn</a>
             </section>
-            <section>
-                <h3><span class="gradient-text">The World’s Largest and Smallest Numbers</span></h3>
-                <ul>
-                    <li>The largest named number in common use is a googolplex, which is a 1 followed by a googol zeros 
-                        (a googol itself is 10¹⁰⁰). To write down a googolplex in full would take more space than the observable universe!</li>
-                    <li>On the smaller side, mathematics deals with numbers called infinitesimals, which are so close to zero that they can’t be measured, yet they’re not quite zero. 
-                        These are used in calculus to explain tiny changes.</li>
-                </ul>
+            <section class="white-bg">
+                <h2><span class="gradient-text">The World’s Largest and Smallest Numbers</span></h2>
+                <div class="boxed">
+                    The largest named number in common use is a <a href="https://en.wikipedia.org/wiki/Googolplex" target="_blank">googolplex</a>, which is a 1 followed by a googol zeros 
+                    (a googol itself is 10¹⁰⁰). To write down a googolplex in full would take more space than the observable universe!
+                </div>
+                <div class="boxed"> 
+                    On the smaller side, mathematics deals with numbers called <a href="https://en.wikipedia.org/wiki/Infinitesimal" target="_blank">infinitesimals</a>, which are so close to zero that they can’t be measured, yet they’re not quite zero. 
+                    These are used in calculus to explain tiny changes.
+                </div>
             </section>
 
             <section>
                 <h2>Mathematical Discoveries</h2>
                 <ul>
-                    <li>The Pythagorean Theorem (a² + b² = c²) is one of the most famous discoveries
+                    <li>The <a href="https://en.wikipedia.org/wiki/Pythagorean_theorem" target="_blank">Pythagorean Theorem</a> (a² + b² = c²) is one of the most famous discoveries
                          in geometry and is still widely used in construction, navigation, and design.</li>
-                    <li>The concept of zero as a number was first developed in ancient India. 
+                    <li>The concept of <a href="https://www.britannica.com/science/zero-mathematics" target="_blank">zero</a> as a number was first developed in ancient India. 
                         This discovery changed the entire history of mathematics and science.</li>
-                    <li>The discovery of prime numbers has fascinated mathematicians for centuries. 
+                    <li>The discovery of <a href="https://www.cuemath.com/numbers/prime-numbers/" target="_blank">prime numbers</a> has fascinated mathematicians for centuries. 
                         Even today, primes are crucial for internet security and cryptography.</li>
                 </ul>
             </section>
             <hr>
-            <section>
-                <h2>Mathematical Breakthroughs</h2>
-                <p>Calculus, developed by Isaac Newton and Gottfried Wilhelm Leibniz in the 17th century, 
+            <section class="white-bg">
+                <h2><span class="gradient-text">Mathematical Breakthroughs</span></h2>
+                <p class="indent justify"><a href="https://en.wikipedia.org/wiki/Calculus">Calculus</a>, developed by Isaac Newton and Gottfried Wilhelm Leibniz in the 17th century, 
                     revolutionized science by allowing us to describe motion, growth, and change.</p>
-                <p>The discovery of irrational numbers (like π and √2) was groundbreaking because it showed not all numbers can be expressed as simple fractions.</p>
-                <p>Modern algorithms that power computers, search engines, and even social media feeds are built on mathematical breakthroughs in logic and computation.</p>
+                <p class="indent justify">The discovery of <a href="https://www.geeksforgeeks.org/maths/irrational-numbers/" target="_blank">irrational numbers</a> (like π and √2) was groundbreaking because it showed not all numbers can be expressed as simple fractions.</p>
+                <p class="indent justify">Modern algorithms that power computers, search engines, and even social media feeds are built on mathematical breakthroughs in logic and computation.</p>
             </section>
+            <hr>
             <section>
-                <h3>Quick Closing Note</h3>
-                <p>Mathematics is not just about solving equations in school—it’s a vast universe of wonder. 
+                <h3 class="gradient-text">Quick Closing Note</h3>
+                <p class="indent justify">Mathematics is not just about solving equations in school—it’s a vast universe of wonder. 
                     From infinite numbers to clever discoveries, it continues to shape the world around us in fun and unexpected ways.</p>
             </section>
             <a href="#" id="to-top" title="Back to Top">&uarr;</a>
@@ -99,7 +120,7 @@
                     <li><a href="contact.html#disclaimer">Disclaimer</a></li>
                 </ul>
             </div>
-            <p class="center-copyright">&copy; 2025 Simply Maths. All Rights Reserved.</p>
+            <p class="center-copyright">&copy; 2025 Simply Maths. All Rights Reserved. Created by <a href="../../myindex.html" target="_blank"> Dayana Bright</a></p>
         </footer>
         
     </div>

@@ -14,22 +14,7 @@
             margin-bottom: 0.5rem;
             list-style-position: outside;
         }
-        /*main section div {
-            margin: 1.5rem auto;
-            padding: 1rem;
-            text-align: center;
-            max-width: 90%;
-            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-        }
-        main section div img {
-            border-radius: 8px;
-        }
-        main section div p.image-caption {
-            font-size: 0.9rem;
-            margin-top: 0.3rem;
-            font-style: italic;
-        }*/
-        main section.image-container {
+        main div.div-container {
             display: flex;
             justify-content: space-between; 
             gap: 20px;
@@ -39,11 +24,14 @@
         main section div.image-container {
             flex: 1; 
             width: 32%; 
-            background: #f9f9f9;
+            background: #ffffff;
             border-radius: 8px;
             padding: 10px;
             text-align: center;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        main section div.image-container:hover {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
         }
         main section div.image-container img {
             max-width: 100%;
@@ -55,13 +43,19 @@
             margin-top: 0.3rem;
             font-style: italic;
         }
+        main section div.centered{
+            margin: 2rem auto;
+        }
     </style>
 </head>
 <body>
     <div id="Container">
         <header>
             <nav>
-                <a href="../index.html" id="header-text"> Simply <span class="gradient-text">Maths</span></a>
+                <p>
+                    <img src="../images/logo.png" width="30px" alt="Logo" id="logo">
+                    <a href="../index.html" id="header-text"> Simply <span class="gradient-text">Maths</span></a>
+                </p>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="#" class="current-page">Explore</a>
@@ -85,11 +79,32 @@
         <main>
             <section>
                 <h1>History of Mathematics</h1>
-                <p>Today, math is not just a tool but a universal language of science and technology.</p>
+                <p class="indent">Today, math is not just a tool but a universal language of science and technology.</p>
                 <a href="../index.html#quotes" class="button-link-1">Get inspired</a>
-                <h3><span class="gradient-text">The History of Mathematics</span></h3>
-                <p>Mathematics is one of humanity’s oldest sciences. Long before the written word, early humans used tally marks carved into bones and stones to track livestock, trade, or time. 
-                   Ancient civilizations like the Babylonians, Egyptians, Chinese, Indians, and Mayans developed counting systems to solve everyday problems—measuring land, trading goods, or predicting the stars.</p>
+            </section>
+            <hr>
+            <section class="image-container white-bg">
+                <h2><span class="gradient-text">Famous Mathematicians</span></h2>
+                <p class="indent">The stories of famous mathematicians, their discoveries, innovations, and perseverance through adversity serves as an inspiration to math students and enthusiasts around the world</p>
+                <div class="div-container">
+                    <div class="image-container">
+                        <img src="../images/archimedes.jpeg" width="50%" alt="Archimedes">
+                        <p class="image-caption">Archimedes - A greek scientist, mathematician and physician, his best contribution is known as the invention of compound pulleys, antiquity, and screw pump.</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="../images/euclid.jpeg" alt="Euclid" width="60%">
+                        <p class="image-caption">Euclid (c. 300 BCE) - Known as the "Father of Geometry," his work "Elements" is one of the most influential works in the history of mathematics.</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="../images/ramanujan.jpeg" alt="Ramanujan" width="55%">
+                        <p class="image-caption">Srinivasa Ramanujan - With almost no formal training in pure mathematics, he made substantial contributions to mathematical analysis, number theory and continued fractions.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2><span class="gradient-text">The History of Mathematics</span></h2>
+                <p class="indent">Mathematics is one of humanity’s oldest sciences. Long before the written word, early humans used tally marks carved into bones and stones to track livestock, trade, or time. 
+                   <a href="https://www.britannica.com/science/mathematics/Ancient-mathematical-sources" target="_blank">Ancient civilizations</a> like the Babylonians, Egyptians, Chinese, Indians, and Mayans developed counting systems to solve everyday problems—measuring land, trading goods, or predicting the stars.</p>
                 <ul>
                     <li><strong>Babylonians (c. 2000 BCE):</strong> Developed a base-60 number system, which is why we have 60 seconds in a minute and 360 degrees in a circle.</li>
                     <li><strong>Egyptians (c. 3000 BCE):</strong> Used geometry for land surveying and construction, leading to the development of basic algebraic concepts.</li>
@@ -99,37 +114,27 @@
                     <li><strong>Renaissance Europe (c. 1400 - 1600 CE):</strong> Saw a revival of mathematical study, with figures like Fibonacci introducing the Hindu-Arabic numeral system to Europe.</li>
                 </ul>
             </section>
-            <section class="image-container">
-                <!--<h2><span class="gradient-text">Famous Mathematicians</span></h2>-->
-                <div class="image-container">
-                    <img src="../images/archimedes.jpeg" width="50%" alt="Archimedes">
-                    <p class="image-caption">Archimedes - Known as the "Father of Geometry," his work "Elements" is one of the most influential works in the history of mathematics.</p>
-                </div>
-                <div class="image-container">
-                    <img src="../images/euclid.jpg" alt="Euclid" class="rounded-image">
-                    <p class="image-caption">Euclid (c. 300 BCE) - Known as the "Father of Geometry," his work "Elements" is one of the most influential works in the history of mathematics.</p>
-                </div>
-                <div class="image-container">
-                    <img src="../images/euclid.jpg" alt="Euclid" class="rounded-image">
-                    <p class="image-caption">Euclid (c. 300 BCE) - Known as the "Father of Geometry," his work "Elements" is one of the most influential works in the history of mathematics.</p>
-                </div>
-            </section>
-            <section >
-                <h2>Ancient Tools vs Modern Tech</h2>
+            
+            <hr>
+            <section class="white-bg">
+                <h2><span class="gradient-text">Ancient Tools vs Modern Tech</span></h2>
                 <p>From the abacus to supercomputers, the tools we use to perform mathematical calculations have evolved dramatically over time.</p>
-                <div class="image-container">
-                    <img src="../images/abacus.jpg" width="20%" alt="Abacus">
-                    <p class="image-caption">Abacus vs Calculator - One of the earliest counting tools, used for basic arithmetic operations.</p>
-                </div>
-                <div class="image-container">
-                    <img src="../images/slide-rule.jpg" width="20%" alt="Atomic Clocks">
-                    <p class="image-caption">Sundials vs Atomic Clocks: Shadows marking time vs hyper-accurate atomic vibrations.</p>
-                </div>
-                <div class="image-container">
-                    <img src="../images/sundial.jpg" width="20%" alt="Tally Marks">
-                    <p class="image-caption">Tally Marks vs Digital Counters: Carved notches vs digital spreadsheets and apps.</p>
+                <div class="div-container">
+                    <div class="image-container centered">
+                        <img src="../images/abacus.jpeg"  alt="Abacus">
+                        <p class="image-caption">Abacus vs Calculator - One of the earliest counting tools, used for basic arithmetic operations.</p>
+                    </div>
+                    <div class="image-container centered">
+                        <img src="../images/clock.jpeg" alt="Atomic Clocks">
+                        <p class="image-caption">Sundials vs Atomic Clocks: Shadows marking time vs hyper-accurate atomic vibrations.</p>
+                    </div>
+                    <div class="image-container centered">
+                        <img src="../images/tally.jpeg" alt="Tally Marks">
+                        <p class="image-caption">Tally Marks vs Digital Counters: Carved notches vs digital spreadsheets and apps.</p>
+                    </div>
                 </div>
             </section>
+            <hr>
             <section>
                 <h2>Number Systems (Roman vs Arabic)</h2>
                 <table>
@@ -150,8 +155,9 @@
                     </tr>
                 </table>
             </section>
-            <section>
-                <h2>Short Introductions to Different Branches of Mathematics</h2>
+            <hr>
+            <section class="white-bg">
+                <h2 class="gradient-text">Short Introductions to Different Branches of Mathematics</h2>
                 <ul>
                     <li><strong>Arithmetic:</strong> The study of basic operations like addition, subtraction, multiplication, and division.</li>
                     <li><strong>Algebra:</strong> The use of symbols and letters to represent numbers and express mathematical relationships.</li>
@@ -162,11 +168,6 @@
                     <li><strong>Probability:</strong> The study of uncertainty and the likelihood of events occurring.</li>
                     <li><strong>Number Theory:</strong> The study of properties and relationships of numbers, especially integers.</li>
                 </ul>
-            </section>
-            <section>
-                <div class="image-container">
-                    <img src="../images/zero-animated.jpeg" width="50%" alt="Animated Zero">
-                    <p class="image-caption">Zer0o: Without me, Math doesn't add up</p>
             </section>
             <a href="#" id="to-top" title="Back to Top">&uarr;</a>
         </main>
@@ -196,7 +197,7 @@
                     <li><a href="contact.html#disclaimer">Disclaimer</a></li>
                 </ul>
             </div>
-            <p class="center-copyright">&copy; 2025 Simply Maths. All Rights Reserved.</p>
+            <p class="center-copyright">&copy; 2025 Simply Maths. All Rights Reserved. Created by <a href="../../myindex.html" target="_blank"> Dayana Bright</a></p>
         </footer>
         
     </div>
