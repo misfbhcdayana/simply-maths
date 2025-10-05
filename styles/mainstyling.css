@@ -13,7 +13,7 @@ body {
     background-repeat: repeat;
 }
 #Container {
-    max-width: 1022px;
+    max-width: 1000px;
     min-width: 700px;
     width: 100%;
     margin: 0 auto;
@@ -48,7 +48,7 @@ nav a#header-text {
     font-size: 1.5rem;
     font-weight: 700;
 }
-nav a#header-text span.gradient-text, h1 span.gradient-text {
+span.gradient-text {
     background: linear-gradient(90deg, #0078D4 0, #19A0FF 100%);
     background-clip: text;
     color: transparent;
@@ -71,7 +71,7 @@ nav ul li ul.dropdown {
     display: none;
     position: absolute;
     top: 100%;
-    padding: 10px 10px 0 0;
+    padding: 10px 5px;
     background: #FFFFFF;
     font-size: 0.9rem;
     border: 1px solid #ffffff;
@@ -122,10 +122,10 @@ main span.little {
 main section {
     padding: 25px 45px;
 }
-main section#section-one {
+main section#section-one, main section#section-three {
     background-color: #ffffff;
 }
-main section a.button-link-1, main section a.button-link-2 {
+main section a.button-link-1, main section a.button-link-2, #to-top {
     display: inline-block;
     margin: 1.1rem 0;
     padding: 10px 20px;
@@ -135,7 +135,7 @@ main section a.button-link-1, main section a.button-link-2 {
     border: 2px solid #0078D4;
     border-radius: 10px;
 }
-main section a.button-link-2 {
+main section a.button-link-2, #to-top{
     color: #0078D4;
     background: white;
 }
@@ -145,10 +145,22 @@ main section a.button-link-1:hover {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
-main section a.button-link-2:hover {
+main section a.button-link-2:hover, #top-button:hover {
     color: white;
     background: #0078D4;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+#to-top{
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#to-top:hover {
+    background-color: #F2FAFF;
+    transform: scale(1.1);
 }
 main section#section-one div, main section#section-three div{
     border: 1px solid #0078D4;
@@ -157,14 +169,31 @@ main section#section-one div, main section#section-three div{
     padding: 10px 20px 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     background: white;
-    max-width: 70%;
+    max-width: 80%;
     margin-bottom: 10px;
+}
+table {
+    font-size: 1.2rem;
+    margin-left: 0;
+    border: 1px solid black;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 600px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+table tr:first-child {
+    background-color: #A6D7FF;
 }
 /*contact form styling*/
 section#contact-form {
     max-width: 70%;
-    margin: 20px 0;
-    padding: 20px;
+    margin-left: 2em;
+    padding: 1em;
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -197,7 +226,7 @@ hr {
     border: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 footer {
-    padding: 50px 50px 0;
+    padding: 50px 50px;
     background: #FFFFFF;
 }
 footer h5, footer h6 {
@@ -231,7 +260,7 @@ footer div p{
     margin: 20px auto 10px;
     font-size: 0.9rem;
 }   
-footer a:hover {
+footer a:hover, main section#section-one a:hover {
     padding-left: 5px;
     transition: all 0.3s ease;
 }
